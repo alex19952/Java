@@ -1,0 +1,22 @@
+package com.company;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner cin = new Scanner(System.in);
+        System.out.print("enter the first line\n");
+        String str = cin.nextLine();
+        System.out.print("enter the second line\n");
+        String str2 = cin.nextLine();
+
+        char[] dst=new char[str.length()/2+1];
+        char[] dst2=new char[str.length()/2];
+
+        str.getChars(0, str.length()/2, dst, 0);
+        str.getChars(str.length()/2, str.length(), dst2, 0);
+
+        System.out.print(dst);
+        System.out.print(str2);
+        System.out.print(dst2);
+    }
+}
